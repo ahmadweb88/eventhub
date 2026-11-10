@@ -3,7 +3,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 import { isSupabaseConfigured } from './env'
 
 // Edit these two lists to match docs/req/02-pages-and-layout.md
-const PROTECTED_PREFIXES = ['/dashboard', '/profile', '/items']
+const PROTECTED_PREFIXES = ['/dashboard', '/events']
 const AUTH_PAGES = ['/login', '/signup']
 
 export async function updateSession(request: NextRequest) {
