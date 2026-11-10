@@ -55,7 +55,9 @@ export default async function EventPage({ params }: Params) {
                 alt={`Poster for ${event.title}`}
                 width={900}
                 height={1200}
-                priority
+                loading="eager"
+                fetchPriority="high"
+                unoptimized
                 sizes="(min-width:1024px) 40vw, 100vw"
                 className="bg-muted aspect-[3/4] w-full rounded-xl object-contain"
               />

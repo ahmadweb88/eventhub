@@ -18,6 +18,7 @@ export function EventCard({ event }: { event: EventWithPoster }) {
           width={600}
           height={450}
           sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw"
+          unoptimized
           className="bg-muted aspect-[4/3] w-full object-contain"
         />
       ) : (
