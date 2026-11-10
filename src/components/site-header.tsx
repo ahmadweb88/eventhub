@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { MobileNav } from '@/components/mobile-nav'
+import { Logo } from '@/components/brand/logo'
 import { buttonVariants } from '@/components/ui/button'
 import { UserMenu } from '@/components/user-menu'
 import { siteConfig } from '@/config/site'
@@ -11,13 +11,7 @@ export async function SiteHeader() {
   return (
     <header className="bg-background shadow-header sticky top-0 z-40">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center gap-4 px-5 md:px-8 lg:px-12">
-        <MobileNav isLoggedIn={Boolean(user)} />
-        <Link
-          href="/"
-          className="font-heading text-brand-dark text-xl font-bold"
-        >
-          {siteConfig.name}
-        </Link>
+        <Logo />
 
         <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
           {siteConfig.nav.map((item) => (
