@@ -3,7 +3,7 @@
 > The single tracker. Tick a step only when its checks pass: `- [x] 4.1 … HH:MM`.
 > Skipped: `- [-] 4.5 … skipped HH:MM (reason)`. Phase details: `phases/phase-N-*.md`.
 
-**Status (10:00):** P5/P6/P7 code done, `npm run check` ✅ (23 tests) · not yet tested end to end in a browser · P3 logo/landing, P8 polish and screenshots open · live: https://eventhub-three-khaki.vercel.app · last push 10:00
+**Status (10:41):** P3 done (logo, favicon, landing, footer; headless layout check 320–1440 ✅) · 2.4 Supabase URLs pending (user) · next: P8 end-to-end test of CRUD + poster + weather (headless) · live: https://eventhub-three-khaki.vercel.app
 
 Brief received 08:05 · 120 minutes · target finish ~10:05.
 
@@ -39,11 +39,11 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 - [x] 2.3 Vercel connected to Git, Supabase env variables added (OPENWEATHER_API_KEY pending), live URL works (`/api/health`) · 09:36
 - [ ] 2.4 (user) Live URL added to Supabase Site URL and Redirect URLs
 
-## P3 Design & layout
-- [ ] 3.1 Logo (events recipe), `icon.svg`, `apple-icon.tsx`; default `favicon.ico` removed (R-10)
-- [ ] 3.2 App shell: header with logo, nav, user menu / Log in + Sign up; footer with API credits (R-74)
-- [ ] 3.3 Landing page: hero split, "what you can do" list, categories, dark CTA band (R-10, R-11)
-- [ ] 3.4 Check landing + shell at 320 / 375 / 1024 / 1440, no sideways scroll
+## P3 Design & layout ✅
+- [x] 3.1 Logo (events recipe), `icon.svg`, `apple-icon.tsx`; default `favicon.ico` removed (R-10)
+- [x] 3.2 App shell: header with logo, nav, user menu / Log in + Sign up; footer with API credits (R-74)
+- [x] 3.3 Landing page: hero split, "what you can do" list, categories, dark CTA band (R-10, R-11)
+- [x] 3.4 Check landing + shell at 320 / 375 / 1024 / 1440, no sideways scroll
 
 ## P4 Authentication
 - [x] 4.1 Proxy prefixes `['/dashboard', '/events']`, auth-page redirect, `next` param (R-04, R-05, R-07)
