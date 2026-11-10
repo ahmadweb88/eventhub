@@ -73,7 +73,18 @@ Copy `.env.example` to `.env.local`:
 
 ## Screenshots
 
-[PLACEHOLDER] Sequential screenshots of each pipeline go in `docs/screenshots/`:
-1. Sign up → 2. Empty dashboard → 3. Create event (validation errors) → 4. Poster upload →
-5. Event details with weather and map → 6. City not found + Try again → 7. Edit → 8. Delete confirmation →
-9. Search and category filter → 10. Logged-out redirect to login
+Taken by a headless end-to-end run (37 checks) against the app, in pipeline order.
+
+| # | Step | Screenshot |
+|---|---|---|
+| 1 | Landing page with Sign up and Log in | ![Landing](docs/screenshots/01-landing.png) |
+| 2 | Login with a friendly error for a wrong password | ![Login error](docs/screenshots/02-login-error.png) |
+| 3 | Dashboard empty state for a new account | ![Empty dashboard](docs/screenshots/03-dashboard-empty.png) |
+| 4 | Create event: errors under each field, past date rejected | ![Validation](docs/screenshots/04-create-validation.png) |
+| 5 | Create event filled in, with poster preview | ![Create filled](docs/screenshots/05-create-filled.png) |
+| 6 | Event details: poster, current weather, attendee tip, map pin | ![Details](docs/screenshots/06-event-details.png) |
+| 7 | City not found: friendly message, Try again, map fallback | ![City not found](docs/screenshots/07-city-not-found.png) |
+| 8 | Dashboard with event cards | ![Dashboard](docs/screenshots/08-dashboard.png) |
+| 9 | Category filter (Charity) | ![Filter](docs/screenshots/09-filter-charity.png) |
+| 10 | Delete confirmation naming the event | ![Delete](docs/screenshots/10-delete-confirm.png) |
+| 11 | Event page on a phone (375 px) | ![Mobile](docs/screenshots/11-event-mobile.png) |

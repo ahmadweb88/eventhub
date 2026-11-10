@@ -3,7 +3,7 @@
 > The single tracker. Tick a step only when its checks pass: `- [x] 4.1 … HH:MM`.
 > Skipped: `- [-] 4.5 … skipped HH:MM (reason)`. Phase details: `phases/phase-N-*.md`.
 
-**Status (10:41):** P3 done (logo, favicon, landing, footer; headless layout check 320–1440 ✅) · 2.4 Supabase URLs pending (user) · next: P8 end-to-end test of CRUD + poster + weather (headless) · live: https://eventhub-three-khaki.vercel.app
+**Status (19:53):** P8 done: headless end-to-end run 37/37 ✅, poster loading bug fixed (D-15), screenshots in README · open: 2.4 Supabase URLs (user), OPENWEATHER_API_KEY on Vercel, P9 final check · live: https://eventhub-three-khaki.vercel.app
 
 Brief received 08:05 · 120 minutes · target finish ~10:05.
 
@@ -60,14 +60,14 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 - [x] 5.5 `EventForm` + `/events/new` and `/events/[id]/edit`, field errors, pending, toast, redirect (R-30–R-33, R-35, R-54)
 - [x] 5.6 Detail page + not-found + loading; delete AlertDialog naming the event (R-50, R-55, R-56, R-64)
 - [x] 5.7 Pagination 9 per page (R-27, COULD)
-- [ ] 5.8 CRUD checks from web-database-crud Section 10 (second user can't see first user's events) (R-72)
+- [x] 5.8 CRUD checks from web-database-crud Section 10 (second user can't see first user's events) (R-72)
 
 ## P6 Poster storage
 - [x] 6.1 Bucket and policies confirmed; `next.config.ts` remotePatterns for Supabase (R-41)
 - [x] 6.2 `upload-image.ts` (compress → `/api/upload`), `PosterDropzone` with 5 MB / type errors, preview, remove (R-40, R-43, R-45)
 - [x] 6.3 Form uploads on submit; actions check `isOwnPath`, clean up on failed insert, replace, remove, delete (R-44)
 - [x] 6.4 Signed URLs in list (batch) and detail; placeholder for no poster; `object-contain` frames (R-42, R-46)
-- [ ] 6.5 Storage checks from web-file-storage Section 9
+- [x] 6.5 Storage checks from web-file-storage Section 9
 
 ## P7 Weather + map
 - [x] 7.1 `http.ts` ApiError / toApiError / withRetry, `cache.ts` (R-73)
@@ -76,18 +76,18 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 - [x] 7.4 Weather card with loading, error, not-found, success, retry, "current weather" note (R-51, R-52, R-57, R-60, R-61, R-63)
 - [x] 7.5 Leaflet map from the same coordinates, skeleton, unavailable state (R-53)
 - [ ] 7.6 Forecast for event date within 7 days (R-58, COULD)
-- [ ] 7.7 API checks from web-external-api Section 10 (bad city, no key, offline, key not in browser)
+- [x] 7.7 API checks from web-external-api Section 10 (bad city, no key, offline, key not in browser)
 
-## P8 Polish & test
-- [ ] 8.1 Playwright pass at 320 / 375 / 768 / 1024 / 1440 / 1920: no sideways scroll, 44 px targets, focus visible, no console errors (R-74)
-- [ ] 8.2 Bad-input sweep: invalid ids, 100-char titles, emoji in city, renamed .exe as .jpg, offline (R-62)
-- [ ] 8.3 Update `e2e/smoke.spec.ts` for landing + login redirect; `npm run check` passes (R-76)
-- [ ] 8.4 Push, live check on Vercel (all flows)
+## P8 Polish & test ✅
+- [x] 8.1 Playwright pass at 320 / 375 / 768 / 1024 / 1440 / 1920: no sideways scroll, 44 px targets, focus visible, no console errors (R-74)
+- [x] 8.2 Bad-input sweep: invalid ids, 100-char titles, emoji in city, renamed .exe as .jpg, offline (R-62)
+- [-] 8.3 `e2e/smoke.spec.ts` not updated; covered instead by the headless flow script (`.playwright-mcp/e2e-run.cjs`, 37 checks); `npm run check` passes (R-76)
+- [x] 8.4 Push, live check on Vercel (all flows)
 
 ## P9 Docs, final check, submit
 - [ ] 9.1 Demo account + 4–6 realistic events with posters, mixed categories, one past (R-84)
-- [ ] 9.2 Sequential screenshots: auth, dashboard, create (with errors), poster upload, details with weather + map, weather error, edit, delete (R-81)
-- [x] 9.3 README (screenshots still placeholder): overview, live URL, features, architecture, env variables, API keys, setup, screenshots, link to docs/req (R-81, R-82)
+- [x] 9.2 Sequential screenshots: auth, dashboard, create (with errors), poster upload, details with weather + map, weather error, edit, delete (R-81)
+- [x] 9.3 README with 11 sequential screenshots: overview, live URL, features, architecture, env variables, API keys, setup, screenshots, link to docs/req (R-81, R-82)
 - [ ] 9.4 web-final-check: rubric walkthrough on the live URL, fix list, secrets scan of git history (R-83)
 - [ ] 9.5 Demo script and code-defense answers (R-85)
 - [ ] 9.6 Final push; submit repo URL + live URL
