@@ -3,7 +3,7 @@
 > The single tracker. Tick a step only when its checks pass: `- [x] 4.1 … HH:MM`.
 > Skipped: `- [-] 4.5 … skipped HH:MM (reason)`. Phase details: `phases/phase-N-*.md`.
 
-**Status (09:36):** P2 done · behind schedule (D-14) · next: P5 Events CRUD · live: https://eventhub-three-khaki.vercel.app · last push 09:36
+**Status (10:00):** P5/P6/P7 code done, `npm run check` ✅ (23 tests) · not yet tested end to end in a browser · P3 logo/landing, P8 polish and screenshots open · live: https://eventhub-three-khaki.vercel.app · last push 10:00
 
 Brief received 08:05 · 120 minutes · target finish ~10:05.
 
@@ -46,35 +46,35 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 - [ ] 3.4 Check landing + shell at 320 / 375 / 1024 / 1440, no sideways scroll
 
 ## P4 Authentication
-- [ ] 4.1 Proxy prefixes `['/dashboard', '/events']`, auth-page redirect, `next` param (R-04, R-05, R-07)
+- [x] 4.1 Proxy prefixes `['/dashboard', '/events']`, auth-page redirect, `next` param (R-04, R-05, R-07)
 - [ ] 4.2 Sign-up (full name, email, password, confirm) and login pages restyled, split layout on lg (R-01, R-02)
 - [ ] 4.3 User menu: name + email + Log out; Profile item removed (R-03, R-08)
 - [ ] 4.4 Dashboard greeting from `profiles.full_name` (R-08)
 - [ ] 4.5 Auth checks from 06-auth pass locally (R-06)
 
 ## P5 Events CRUD
-- [ ] 5.1 `events` migration confirmed, types regenerated, `event.ts` Zod schemas + `todayIso()` + unit tests for past-date rule (R-31, R-33, R-34, R-77)
-- [ ] 5.2 Data layer `listEvents` / `getEvent` with search, category, upcoming order, count (R-20–R-22, R-26, R-28)
-- [ ] 5.3 Server actions create / update / delete with `ActionResult` (R-30–R-32, R-71)
-- [ ] 5.4 Dashboard: heading + New event, search, category pills, card grid, empty and no-results states, `loading.tsx` (R-20–R-25)
-- [ ] 5.5 `EventForm` + `/events/new` and `/events/[id]/edit`, field errors, pending, toast, redirect (R-30–R-33, R-35, R-54)
-- [ ] 5.6 Detail page + not-found + loading; delete AlertDialog naming the event (R-50, R-55, R-56, R-64)
-- [ ] 5.7 Pagination 9 per page (R-27, COULD)
+- [x] 5.1 `events` migration confirmed, types regenerated, `event.ts` Zod schemas + `todayIso()` + unit tests for past-date rule (R-31, R-33, R-34, R-77)
+- [x] 5.2 Data layer `listEvents` / `getEvent` with search, category, upcoming order, count (R-20–R-22, R-26, R-28)
+- [x] 5.3 Server actions create / update / delete with `ActionResult` (R-30–R-32, R-71)
+- [x] 5.4 Dashboard: heading + New event, search, category pills, card grid, empty and no-results states, `loading.tsx` (R-20–R-25)
+- [x] 5.5 `EventForm` + `/events/new` and `/events/[id]/edit`, field errors, pending, toast, redirect (R-30–R-33, R-35, R-54)
+- [x] 5.6 Detail page + not-found + loading; delete AlertDialog naming the event (R-50, R-55, R-56, R-64)
+- [x] 5.7 Pagination 9 per page (R-27, COULD)
 - [ ] 5.8 CRUD checks from web-database-crud Section 10 (second user can't see first user's events) (R-72)
 
 ## P6 Poster storage
-- [ ] 6.1 Bucket and policies confirmed; `next.config.ts` remotePatterns for Supabase (R-41)
-- [ ] 6.2 `upload-image.ts` (compress → `/api/upload`), `PosterDropzone` with 5 MB / type errors, preview, remove (R-40, R-43, R-45)
-- [ ] 6.3 Form uploads on submit; actions check `isOwnPath`, clean up on failed insert, replace, remove, delete (R-44)
-- [ ] 6.4 Signed URLs in list (batch) and detail; placeholder for no poster; `object-contain` frames (R-42, R-46)
+- [x] 6.1 Bucket and policies confirmed; `next.config.ts` remotePatterns for Supabase (R-41)
+- [x] 6.2 `upload-image.ts` (compress → `/api/upload`), `PosterDropzone` with 5 MB / type errors, preview, remove (R-40, R-43, R-45)
+- [x] 6.3 Form uploads on submit; actions check `isOwnPath`, clean up on failed insert, replace, remove, delete (R-44)
+- [x] 6.4 Signed URLs in list (batch) and detail; placeholder for no poster; `object-contain` frames (R-42, R-46)
 - [ ] 6.5 Storage checks from web-file-storage Section 9
 
 ## P7 Weather + map
-- [ ] 7.1 `http.ts` ApiError / toApiError / withRetry, `cache.ts` (R-73)
-- [ ] 7.2 `weather.ts` service: OWM + Open-Meteo fallback, Zod-validated, `adviceFor(weather, category)` + tests (R-51, R-52, R-77)
-- [ ] 7.3 `/api/weather` route: 401 / 400 / 404 / 502 / 503 / 504 (R-60, R-61, R-73)
-- [ ] 7.4 Weather card with loading, error, not-found, success, retry, "current weather" note (R-51, R-52, R-57, R-60, R-61, R-63)
-- [ ] 7.5 Leaflet map from the same coordinates, skeleton, unavailable state (R-53)
+- [x] 7.1 `http.ts` ApiError / toApiError / withRetry, `cache.ts` (R-73)
+- [x] 7.2 `weather.ts` service: OWM + Open-Meteo fallback, Zod-validated, `adviceFor(weather, category)` + tests (R-51, R-52, R-77)
+- [x] 7.3 `/api/weather` route: 401 / 400 / 404 / 502 / 503 / 504 (R-60, R-61, R-73)
+- [x] 7.4 Weather card with loading, error, not-found, success, retry, "current weather" note (R-51, R-52, R-57, R-60, R-61, R-63)
+- [x] 7.5 Leaflet map from the same coordinates, skeleton, unavailable state (R-53)
 - [ ] 7.6 Forecast for event date within 7 days (R-58, COULD)
 - [ ] 7.7 API checks from web-external-api Section 10 (bad city, no key, offline, key not in browser)
 
@@ -87,7 +87,7 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 ## P9 Docs, final check, submit
 - [ ] 9.1 Demo account + 4–6 realistic events with posters, mixed categories, one past (R-84)
 - [ ] 9.2 Sequential screenshots: auth, dashboard, create (with errors), poster upload, details with weather + map, weather error, edit, delete (R-81)
-- [ ] 9.3 README: overview, live URL, features, architecture, env variables, API keys, setup, screenshots, link to docs/req (R-81, R-82)
+- [x] 9.3 README (screenshots still placeholder): overview, live URL, features, architecture, env variables, API keys, setup, screenshots, link to docs/req (R-81, R-82)
 - [ ] 9.4 web-final-check: rubric walkthrough on the live URL, fix list, secrets scan of git history (R-83)
 - [ ] 9.5 Demo script and code-defense answers (R-85)
 - [ ] 9.6 Final push; submit repo URL + live URL
