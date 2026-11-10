@@ -3,7 +3,7 @@
 > The single tracker. Tick a step only when its checks pass: `- [x] 4.1 … HH:MM`.
 > Skipped: `- [-] 4.5 … skipped HH:MM (reason)`. Phase details: `phases/phase-N-*.md`.
 
-**Status (08:23):** P1 done · next: P2 Go public · live: — · last push: —
+**Status (09:36):** P2 done · behind schedule (D-14) · next: P5 Events CRUD · live: https://eventhub-three-khaki.vercel.app · last push 09:36
 
 Brief received 08:05 · 120 minutes · target finish ~10:05.
 
@@ -33,11 +33,11 @@ Brief received 08:05 · 120 minutes · target finish ~10:05.
 - [x] 1.6 Private `CLAUDE.md` / `AGENTS.md` per web-requirements-plan Section 8
 - [x] 1.7 `npm run check` passes · 08:23
 
-## P2 Go public
-- [ ] 2.1 `git init`, AI files in `.git/info/exclude`, first commit as the user
-- [ ] 2.2 Public GitHub repo `eventhub`, push to `main`
-- [ ] 2.3 Vercel connected to Git, 3 env variables added, live URL works (`/api/health`)
-- [ ] 2.4 Live URL added to Supabase Site URL and Redirect URLs
+## P2 Go public ✅
+- [x] 2.1 `git init`, AI files in `.git/info/exclude`, first commit as the user
+- [x] 2.2 Public GitHub repo https://github.com/ahmadweb88/eventhub, push to `main`
+- [x] 2.3 Vercel connected to Git, Supabase env variables added (OPENWEATHER_API_KEY pending), live URL works (`/api/health`) · 09:36
+- [ ] 2.4 (user) Live URL added to Supabase Site URL and Redirect URLs
 
 ## P3 Design & layout
 - [ ] 3.1 Logo (events recipe), `icon.svg`, `apple-icon.tsx`; default `favicon.ico` removed (R-10)

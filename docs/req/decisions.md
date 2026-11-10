@@ -17,3 +17,4 @@
 | D-11 | 08:05 | Design: "Ink & Coral" preset (events/social), Sora + Source Sans 3 (already in the starter), code-built logo using the events calendar recipe | Fits the subject; fonts already wired | assumption |
 | D-12 | 08:05 | Title minimum 3 characters; description ≤ 2000; venue ≤ 120; city letters/spaces/`.'-` only, 2–80 | Sensible limits; city regex also protects the weather query | assumption |
 | D-13 | 08:05 | No profile page, password reset or email confirmation | Not in the brief; time | final |
+| D-14 | 09:36 | Behind schedule (~30 min left): build order changed to P4 check → P5 CRUD → P6 posters → P7 weather + map → minimal P3 (logo, landing copy) → README. Pagination (R-27), forecast (R-58) and landing extras dropped first | Protect the highest-mark criteria: CRUD 20, Auth 15, API 15, Storage 10 | final |
